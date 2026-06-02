@@ -34,7 +34,6 @@
     }
   },
   "require": {
-    "osiktech/roundcube_backgrounds": "dev-main",
     "php": ">=8.2.0",
     "roundcube/plugin-installer": ">=0.1.3"
   },
