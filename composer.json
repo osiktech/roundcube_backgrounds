@@ -9,7 +9,7 @@
     "logout"
   ],
   "homepage": "https://github.com/osiktech/roundcube_backgrounds",
-  "license": "GPLv3+",
+  "license": "GPL-3.0-or-later",
   "version": "1.0.0",
   "authors": [
     {
