@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/osiktech/roundcube_backgrounds",
   "license": "GPL-3.0-or-later",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Osik",
@@ -19,6 +19,20 @@
       "role": "Developer"
     }
   ],
+  "repositories": {
+    "roundcube_backgrounds": {
+      "type": "package",
+      "package": {
+        "name": "osiktech/roundcube_backgrounds",
+        "version": "dev-main",
+        "source": {
+          "url": "http://plugins.roundcube.net",
+          "type": "vcs",
+          "reference": "origin/main"
+        }
+      }
+    }
+  },
   "require": {
     "php": ">=8.2.0",
     "roundcube/plugin-installer": ">=0.1.3"
