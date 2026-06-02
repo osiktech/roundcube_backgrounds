@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1020"/>
+      <stop offset="55%" stop-color="#101A33"/>
+      <stop offset="100%" stop-color="#0D1325"/>
+    </linearGradient>
+
+    <!-- Accent gradients -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <!-- Soft blur -->
+    <filter id="blur-xl">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Envelope symbol -->
+    <symbol id="mail" viewBox="0 0 220 160">
+      <rect x="10" y="20" width="200" height="120" rx="20"
+            fill="rgba(255,255,255,0.03)"
+            stroke="url(#cyanGlow)"
+            stroke-width="3"/>
+      <path d="M20 38 L110 100 L200 38"
+            fill="none"
+            stroke="url(#cyanGlow)"
+            stroke-width="3"
+            stroke-linecap="round"/>
+      <path d="M20 138 L84 84 M200 138 L136 84"
+            fill="none"
+            stroke="url(#cyanGlow)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            opacity="0.7"/>
+    </symbol>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2560" height="1440" fill="url(#bg)"/>
+
+  <!-- Ambient color blobs -->
+  <circle cx="520" cy="260" r="260" fill="#0EA5E9" opacity="0.14" filter="url(#blur-xl)"/>
+  <circle cx="1950" cy="340" r="280" fill="#8B5CF6" opacity="0.14" filter="url(#blur-xl)"/>
+  <circle cx="1320" cy="1180" r="340" fill="#06B6D4" opacity="0.08" filter="url(#blur-xl)"/>
+
+  <!-- Flowing network lines -->
+  <g opacity="0.32" stroke="url(#violetGlow)" stroke-width="2" fill="none">
+    <path d="M160 1040 C 520 760, 820 980, 1280 760 S 1980 640, 2400 880"/>
+    <path d="M280 460 C 700 280, 1060 620, 1520 420 S 2080 240, 2360 460"/>
+    <path d="M120 760 C 420 640, 900 980, 1340 920 S 2040 1020, 2460 720"/>
+  </g>
+
+  <!-- Data nodes -->
+  <g fill="#8BE9FD" opacity="0.7">
+    <circle cx="360" cy="432" r="6"/>
+    <circle cx="720" cy="566" r="5"/>
+    <circle cx="1100" cy="484" r="6"/>
+    <circle cx="1720" cy="388" r="5"/>
+    <circle cx="2220" cy="456" r="6"/>
+    <circle cx="540" cy="872" r="5"/>
+    <circle cx="1340" cy="916" r="6"/>
+    <circle cx="2100" cy="968" r="5"/>
+  </g>
+
+  <!-- Main abstract envelopes -->
+  <g filter="url(#glow)">
+    <use href="#mail" x="980" y="520" width="600" height="430" opacity="0.95"/>
+    <use href="#mail" x="420" y="250" width="300" height="220" opacity="0.55"/>
+    <use href="#mail" x="1860" y="880" width="280" height="205" opacity="0.45"/>
+    <use href="#mail" x="1960" y="180" width="220" height="160" opacity="0.35"/>
+  </g>
+
+  <!-- Floating message bars -->
+  <g opacity="0.45">
+    <rect x="880" y="1090" width="420" height="10" rx="5" fill="url(#cyanGlow)"/>
+    <rect x="960" y="1125" width="300" height="8" rx="4" fill="url(#violetGlow)"/>
+    <rect x="1470" y="290" width="280" height="8" rx="4" fill="url(#cyanGlow)"/>
+    <rect x="1540" y="325" width="180" height="8" rx="4" fill="url(#violetGlow)"/>
+  </g>
+
+  <!-- Tiny particles -->
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="180" cy="180" r="2"/>
+    <circle cx="420" cy="1200" r="2"/>
+    <circle cx="880" cy="160" r="2"/>
+    <circle cx="1240" cy="1320" r="2"/>
+    <circle cx="1780" cy="1080" r="2"/>
+    <circle cx="2300" cy="260" r="2"/>
+    <circle cx="2440" cy="1180" r="2"/>
+  </g>
+</svg>

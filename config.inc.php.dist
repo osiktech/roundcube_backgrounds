@@ -1,0 +1,16 @@
+<?php
+
+// Wallpaper selection mode: monthly | random | fixed
+$config['roundcube_backgrounds_mode'] = 'fixed';
+
+// Used when mode is "fixed" (filename inside the assets/images directory)
+$config['roundcube_backgrounds_fixed'] = 'roundcube_background.svg';
+
+// Directory with wallpaper images (empty = plugin assets/images folder)
+// $config['roundcube_backgrounds_path'] = '/var/www/wallpapers';
+
+// CSS background properties
+$config['roundcube_backgrounds_size'] = 'cover';
+$config['roundcube_backgrounds_position'] = 'center center';
+$config['roundcube_backgrounds_repeat'] = 'no-repeat';
+$config['roundcube_backgrounds_attachment'] = 'fixed';

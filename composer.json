@@ -1,0 +1,47 @@
+{
+  "name": "osiktech/roundcube_backgrounds",
+  "type": "roundcube-plugin",
+  "description": "Background images for login/logout page [inspired by https://github.com/BlueLama/rc-login-background]",
+  "keywords": [
+    "plugin",
+    "background",
+    "login",
+    "logout"
+  ],
+  "homepage": "https://github.com/osiktech/roundcube_backgrounds",
+  "license": "GPLv3+",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Osik",
+      "email": "me@osik.de",
+      "homepage": "https://github.com/osiktech",
+      "role": "Developer"
+    }
+  ],
+  "repositories": {
+    "roundcube_backgrounds": {
+      "type": "package",
+      "package": {
+        "name": "osiktech/roundcube_backgrounds",
+        "version": "dev-main",
+        "source": {
+          "url": "https://github.com/osiktech/roundcube_backgrounds.git",
+          "type": "vcs",
+          "reference": "origin/main"
+        }
+      }
+    }
+  },
+  "require": {
+    "osiktech/roundcube_backgrounds": "dev-main",
+    "php": ">=8.2.0",
+    "roundcube/plugin-installer": ">=0.1.3"
+  },
+  "extra": {
+    "roundcube": {
+      "min-version": "1.6.1",
+      "max-version": "1.7"
+    }
+  }
+}
